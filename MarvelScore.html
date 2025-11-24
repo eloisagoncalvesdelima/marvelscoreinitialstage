@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividadefinalpw.css">
+    <title>MarvelScore</title>
+
+    <script>
+        function showCharacter(id) {
+            document.getElementById("characters-list").style.display = "none";
+            document.getElementById(id).style.display = "block";
+        }
+
+        function backToList() {
+            document.querySelectorAll('.char-page').forEach(div => div.style.display = "none");
+            document.getElementById("characters-list").style.display = "grid";
+        }
+    </script>
+</head>
+
+<body>
+<h1>MarvelScore</h1>
+
+<div class="tabs">
+  <button class="tab-button" onclick="openTab('tab1')">Personagens</button>
+  <button class="tab-button" onclick="openTab('tab2')">Filmes e séries</button>
+<button class="tab-button" onclick="openTab('tab3')">Linha do Tempo</button>
+</div>
+
+<script>
+function openTab(id) {
+    document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+<!-- *************************************************** -->
+<!-- ********************** TAB 1 *********************** -->
+<!-- *************************************************** -->
+<div id="tab1" class="tab-content active">
+
+    <h2>Personagens do MCU</h2>
+
+    <!-- LISTA DE PERSONAGENS -->
+    <div id="characters-list" class="characters-grid">
+
+        <!-- Tony Stark -->
+        <div class="character-card" onclick="showCharacter('ironman')">
+            <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2024/07/28/1651641699-3a8eb62cd10602cdc82f6d046d84b343.jpg" alt="">
+            <p>Tony Stark / Homem de Ferro</p>
+        </div>
+
+        <!-- Capitão América -->
+        <div class="character-card" onclick="showCharacter('capitao')">
+            <img src="https://i.pinimg.com/564x/14/2e/1f/142e1f9eb0e05a2ca720d1d6e70a7a4d.jpg" alt="">
+            <p>Steve Rogers / Capitão América</p>
+        </div>
+
+        <!-- Loki -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+            <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+            <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+        <!-- Loki (vilão – roxo) -->
+        <div class="character-card" onclick="showCharacter('loki')">
+            <img src="https://rollingstone.com.br/wp-content/uploads/loki-serie-disney-foto-reproducao.jpg" alt="">
+            <p>Loki</p>
+        </div>
+
+    </div>
+
+
+    <!-- ************ PÁGINAS INDIVIDUAIS ************ -->
+
+    <!-- Iron Man -->
+    <div id="ironman" class="char-page">
+        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+        <h2>Homem de Ferro</h2>
+        <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Iron+Man" alt="">
+        <p>Gênio, bilionário, playboy e filantropo. Criador das armaduras Iron Man.</p>
+    </div>
+
+    <!-- Capitão -->
+    <div id="capitao" class="char-page">
+        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+        <h2>Capitão América</h2>
+        <img class="profile-img" src="https://via.placeholder.com/400x400/cc0000/ffffff?text=Capitao" alt="">
+        <p>Soldado aprimorado com o Soro do Super Soldado. Líder dos Vingadores.</p>
+    </div>
+
+    <!-- Loki -->
+    <div id="loki" class="char-page">
+        <button class="back-btn" onclick="backToList()">◀ Voltar</button>
+        <h2>Loki</h2>
+        <img class="profile-img" src="https://via.placeholder.com/400x400/550077/ffffff?text=Loki" alt="">
+        <p>Deus da Trapaça, manipulador, irmão de Thor e figura central em múltiplas linhas temporais.</p>
+    </div>
+
+</div>
+
+<!-- TAB 2 -->
+<div id="tab2" class="tab-content">
+  <h2>Filmes e Séries</h2>
+  <p>Conteúdo da segunda aba.</p>
+</div>
+
+</body>
+</html>
