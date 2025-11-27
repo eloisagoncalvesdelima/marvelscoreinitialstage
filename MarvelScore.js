@@ -13,3 +13,4 @@ items.forEach((item, index) => {
     const spacing = 180;  // distância horizontal entre as imagens
     item.style.left = (index * spacing) + "px";
 });
+
